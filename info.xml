@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<extension key="eu.tttp.dbencrypt" type="module">
+  <file>dbencrypt</file>
+  <name>Encrypt your database. Run it ONLY on backup</name>
+  <description>This extension allows you to share a database (eg. for testing or debugging purpose) without having to share the private information of your constituents. What it does is replace all the fields that are contains sensitive informations (eg. first name, last name, email, street address...) by long meaningless strings. so "John Doe" becomes "56379b465bd3d69c33060f4305c a39fc77dd242a8131c9a552e84c7f481".
+
+<b>It will destroy the contacts in your db</b>
+Only use this extension on a copy of your database, because it WILL encrypt the data (that's the goal).
+</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>xavier dutoit</author>
+    <email>civicrm@tttp.eu</email>
+  </maintainer>
+  <releaseDate>2014-06-09</releaseDate>
+  <version>1.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>4.2</ver>
+    <ver>4.3</ver>
+    <ver>4.4</ver>
+    <ver>4.5</ver>
+  </compatibility>
+  <comments>Do NOT run it on a live database</comments>
+  <civix>
+    <namespace>CRM/Dbencrypt</namespace>
+  </civix>
+</extension>
